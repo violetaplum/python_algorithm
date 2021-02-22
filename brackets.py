@@ -17,7 +17,7 @@ class Stack:
         return item
 
 
-def solution(S: str):
+def brackets(S: str):
     stack = Stack()
     for bracket in S:
         if bracket == '{' or bracket == '[' or bracket == '(':
@@ -43,5 +43,5 @@ def solution(S: str):
 
 if __name__ == '__main__':
     string = '{[()()]}'
-    print(solution(string))
+    print(brackets(string))
 
